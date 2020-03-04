@@ -30,8 +30,7 @@ public class Main {
         minutes = (minutes %60);
         hours = hours%(12) == 0? 12 : hours%12;
 
-
-        System.out.println(hours +": " + minutes);
+        System.out.printf("the time is: %d:%02d", hours,minutes);
 
 
     }
