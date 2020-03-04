@@ -13,15 +13,25 @@ public class Main {
         Scanner keyboard;
         keyboard = new Scanner(System.in);
 
-        int hour;
+        int hours;
         int minutes;
 
+
         System.out.println("Hour:");
-        hour = keyboard.nextInt();
-
-        System.out.println("minute:");
+       hours = keyboard.nextInt();
+       // hours = 12;
+        System.out.println(hours);
+        System.out.println("Minute:");
         minutes = keyboard.nextInt();
+//        minutes = 30;
 
+        hours = minutes >= 60 ? (hours + (minutes/60)) : hours ;
+
+        minutes = (minutes %60);
+        hours = hours%(12) == 0? 12 : hours%12;
+
+
+        System.out.println(hours +": " + minutes);
 
 
     }
