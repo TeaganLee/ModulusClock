@@ -20,7 +20,7 @@ public class Main {
         System.out.println("Hour:");
        hours = keyboard.nextInt();
        // hours = 12;
-        System.out.println(hours);
+
         System.out.println("Minute:");
         minutes = keyboard.nextInt();
 //        minutes = 30;
